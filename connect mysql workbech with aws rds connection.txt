@@ -1,0 +1,53 @@
+[A.] How to connect Mysql workbech with AWS-RDS Database
+========================================================
+
+1.)Open MySQL Workbench, and then choose the ⊕ sign beside MySQL Connections to set up a new connection.
+
+2.)In the Setup New Connection dialog box, enter a name for your connection.
+
+3.)In the Parameters section, enter these details:
+
+      Host name: Enter the RDS endpoint.
+      Port: Enter the Port number.
+      Username: Enter the primary user.
+	
+  Note: You can get these details from the Amazon RDS console. From the Databases section, choose Instances, and then select the instance that 
+             you are connecting to. From the Connectivity and Security tab, choose Configuration. The primary user is listed here.	
+			 
+4.)Choose Test Connection.
+
+5.)In the pop-up window that appears, enter the password that you configured when you created the DB instance, and then choose OK.
+
+6.)After testing your connection, from the Setup new connection dialog box, choose OK to save the connection.
+
+
+[B.] Spring Boot with Amazon RDS 
+==================================
+
+1.)Create your project
+
+2.)In application.yml file
+   we have to change the following details like hostname, username, password
+   
+   
+Sample application.yml
+
+#MySQL DataBase information
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://database-1.ckosuc9gzxxi.ap-south-1.rds.amazonaws.com:3306/courses
+    username: admin
+    password: Devdutt123
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+	  
+	  
+Note:- 
+  
+  url: jdbc:mysql://<RDS EndPoints>:3306/courses (RDS database name)
+  username: admin (RDS username)
+  password: Devdutt123 (RDS console password)

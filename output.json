@@ -1,0 +1,42 @@
+[
+  {
+    "cid": 1,
+    "name": "core-java",
+    "price": 5000.0
+  },
+  {
+    "cid": 2,
+    "name": "jdbc",
+    "price": 1500.0
+  },
+  {
+    "cid": 3,
+    "name": "servlet",
+    "price": 3000.0
+  },
+  {
+    "cid": 4,
+    "name": "jsp",
+    "price": 1000.0
+  },
+  {
+    "cid": 5,
+    "name": "spring",
+    "price": 15000.0
+  },
+  {
+    "cid": 6,
+    "name": "hibernate",
+    "price": 10000.0
+  },
+  {
+    "cid": 7,
+    "name": "Restful Service",
+    "price": 12000.0
+  },
+  {
+    "cid": 8,
+    "name": "Aws with DevOps",
+    "price": 22000.0
+  }
+]

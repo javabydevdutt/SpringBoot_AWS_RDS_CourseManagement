@@ -1,0 +1,16 @@
+server:
+  port: 9090
+
+#MySQL DataBase information
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://database-1.ckosuc9gzxxi.ap-south-1.rds.amazonaws.com:3306/courses
+    username: admin
+    password: Devdutt123
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
